@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 
-body{
+body {
     display: grid;
     align-content: center;
     justify-content: center;
@@ -22,7 +22,9 @@ body{
     align-items: center;
     justify-items: center;
 }
-.zdog-canvas{
+
+.zdog-canvas {
     border: 1px black solid;
-    background-color: black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(166deg, rgba(2, 0, 36, 0.7777485994397759) 0%, rgba(9, 121, 104, 1) 0%, rgba(14, 40, 45, 1) 62%);
 }

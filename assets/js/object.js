@@ -42,8 +42,6 @@ for (i= 0;i!= 40;i++){
 
 function animate() {
     sphere.rotate.y += 0.01
-    Fshape.rotate.x += 0.001 
-    Fshape.rotate.y += 0.001 
     Fshape.updateRenderGraph();
     requestAnimationFrame(animate);
 }
