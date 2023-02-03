@@ -24,4 +24,5 @@ body{
 }
 .zdog-canvas{
     border: 1px black solid;
+    background-color: black;
 }

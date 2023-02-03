@@ -4,10 +4,10 @@ let Fshape = new Zdog.Illustration({
     resize: 'fullscreen',
     backface: "",
     dragRotate: true,
-    rotate:{
-        y:-1.57
-    },
-    zoom: 1
+    // translate:{
+    //     x:500
+    // },
+    zoom: 0.65
 });
 
 
