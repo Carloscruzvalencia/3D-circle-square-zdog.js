@@ -3,7 +3,7 @@
 ![inspiracion](pr/example.jpg)
 
 # Resultado final
-![Resultado final del proyecto](pr/resu.png)
+![Resultado final del proyecto](pr/resultado.gif)
 
 [Pagina web](https://carloscruzvalencia.github.io/Cube-Zdog.js/)
 <details open>
@@ -17,52 +17,59 @@ let rubikCubes = new Zdog.Anchor({
 });
 ```
 
+## Creamos dos listas con la pocicion del los circulos y el espacio entre ellos
+```JavaScript
+circ = [200,350,465,530,570,590,590,570,530,465,350,200]
+space = 320
+```
+## Mediante un bucle se generan los circulos nesesarios
+```JavaScript 
+for (i = 0; i != circ.length; i++) {
+    new Zdog.Ellipse({
+        addTo: sphere,
+        diameter: circ[i],
+        stroke: 4,
+        color: 'green',
+    });
+}
+```
+## Mediante unas condiciones ponemos el espacio entre los circulos
+```JavaScript
+    if (i <= 6) {
+        sphere.children[i].translate.z = space
+        space = space - 50
+    }
+    else {
+        sphere.children[i].translate.z = space
+        space = space - 50
+    }
+```
 ## Mediante un bucle se generan los cubos nesesarios
 ```JavaScript 
-ps = 10
-for (i = 0; i != 4; i++) {
-    let box = new Zdog.Box({
-        addTo: rubikCubes,
-        width: 120,
-        height: 120,
-        depth: 130,
-        stroke: false,
-        color: '#C25',
-        leftFace: '#EA0',
-        rightFace: '#E62',
-        topFace: '#ED0',
-        bottomFace: '#636',
-        translate: {
-            x: i * 125,
-            y: 10
+for (i= 0;i!= 40;i++){
+    let rect = new Zdog.Rect({
+        addTo: cube,
+        width: 800,
+        height: 800,
+        stroke: 1.5,
+        color: 'white',
+        translate:{
+            z: i *-17
         }
     });
-    for (j = 0; j != 3; j++) {
-        box.copy({
-            addTo: rubikCubes,
-            translate: {
-                y: ps += 125,
-                x: i * 125,
-                z: 0
-            },
-        });
-    }
-    ps = 10
 }
 ```
-## Con la funcion ```.copyGraph``` generamos los bloques que faltan
+## Terminamos animando todo el proyecto 
 ```JavaScript
-for (i =0 ;i != 4;i++){
-    rubikCubes.copyGraph({
-        translate: {
-            x: 0,
-            z: i * -135
-        },
-    })
+function animate() {
+    sphere.rotate.y += 0.01
+    Fshape.updateRenderGraph();
+    requestAnimationFrame(animate);
 }
+animate(); 
 ```
 # Resultado final
-![Resultado final del proyecto](pr/resu.png)
+![Resultado final del proyecto](pr/resultado.gif)
 
 visita la pagina web
 [Pagina web](https://carloscruzvalencia.github.io/Cube-Zdog.js/)
