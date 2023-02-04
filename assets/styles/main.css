@@ -1,30 +1,9 @@
 * {
-    list-style-type: none;
     margin-block-start: 0em;
-    margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 0px;
-    user-select: none;
-    -webkit-user-drag: none;
-    text-decoration: none;
-    color: black;
     overflow: hidden;
 }
-
-body {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
 .zdog-canvas {
-    border: 1px black solid;
-    background: rgb(2, 0, 36);
     background: linear-gradient(166deg, rgba(2, 0, 36, 0.7777485994397759) 0%, rgba(9, 121, 104, 1) 0%, rgba(14, 40, 45, 1) 62%);
 }
