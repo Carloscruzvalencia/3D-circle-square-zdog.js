@@ -5,7 +5,7 @@
 # Resultado final
 ![Resultado final del proyecto](pr/resultado.gif)
 
-[Pagina web](https://carloscruzvalencia.github.io/Cube-Zdog.js/)
+[Pagina web](https://carloscruzvalencia.github.io/3D-sphere-square-zdog.js/)
 <details open>
 <summary>Documentacion del proyecto</summary>
 
@@ -72,5 +72,5 @@ animate();
 ![Resultado final del proyecto](pr/resultado.gif)
 
 visita la pagina web
-[Pagina web](https://carloscruzvalencia.github.io/Cube-Zdog.js/)
+[Pagina web](https://carloscruzvalencia.github.io/3D-sphere-square-zdog.js/)
 </details>
