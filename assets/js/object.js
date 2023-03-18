@@ -31,7 +31,7 @@ for (i = 0; i != 40; i++) {
         width: 800,
         height: 800,
         stroke: 1.5,
-        color: 'white',
+        color: 'black',
         translate: {
             z: i * -17
         }
@@ -39,6 +39,7 @@ for (i = 0; i != 40; i++) {
 }
 function animate() {
     sphere.rotate.y += 0.01
+    Fshape.rotate.y -= 0.001
     Fshape.updateRenderGraph();
     requestAnimationFrame(animate);
 }
